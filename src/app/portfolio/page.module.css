@@ -1,0 +1,49 @@
+.mainTitle  {
+    font-size: 100px;
+    color: #E71D36;
+}
+
+.selectTitle    {
+    margin: 20px 0px;
+}
+
+.items  {
+    display: flex;
+    gap: 50px;
+}
+
+.item  {
+    border: 5px solid #E71D36;
+    border-radius: 5px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    background-size: cover !important;
+}
+.item:nth-child(1)  {
+    background: url("https://elvezrestaurant.com/wp-content/uploads/sites/15/2018/04/VERTICALRIGHT_4-e1666374050378.jpg");
+}
+
+.item:nth-child(2)  {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyR-FxiOby6zwN71P77onsvOBdKRTKv9Jkrg&usqp=CAU");
+}
+
+.item:nth-child(3)  {
+    background: url("https://images.otstatic.com/prod1/48215148/2/huge.jpg");
+}
+
+.title {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #E71D36;
+    /* color: #1B998B; */
+    /* color: lightgray; */
+}
+
+.item:hover .title  {
+    color: #F46036;
+}
+

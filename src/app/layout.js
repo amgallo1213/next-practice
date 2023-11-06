@@ -1,7 +1,11 @@
-import { Inter } from 'next/font/google'
+import { Inter,  Poppins, Dancing_Script } from 'next/font/google'
 import './globals.css'
+import Navbar from '@/components/navbar/Navbar'
+import Footer from '@/components/footer/Footer'
+import { ThemeProvider } from '@/context/ThemeContext'
 
 const inter = Inter({ subsets: ['latin'] })
+const dancingScript = Dancing_Script({subsets: ['latin']})
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,8 +14,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning={true}>
+      <body className={dancingScript.className} suppressHydrationWarning={true}>
+        <ThemeProvider>
+          <div className="container">
+            <Navbar/>
+            {children}
+            <Footer/>
+          </div>
+        </ThemeProvider>
+        </body>
     </html>
   )
 }
