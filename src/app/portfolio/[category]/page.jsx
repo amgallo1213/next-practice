@@ -34,6 +34,9 @@ const Category = ({params}) => {
                 <div className={styles.imgContainer}>
                     <Image className={styles.img} src="https://elvezrestaurant.com/wp-content/uploads/sites/15/2018/04/VERTICALRIGHT_4-e1666374050378.jpg" alt="" fill={true}/>
                 </div>
+                <div className={styles.imgContainer}>
+                <Image className={styles.img} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXcZIVDWhAAG7HXoXFb-A2ssunsyxm77WqNkBSx8Qc_BvO5oXvNGqZko8fGO7sY1abgUY&usqp=CAU" fill={true} />
+                </div>
             </div>
         ))}
 

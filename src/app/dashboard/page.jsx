@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './page.module.css'
 import useSWR from 'swr';
+import Image from 'next/image';
 
 const Dashboard = () => {
 
@@ -36,7 +37,13 @@ const Dashboard = () => {
 
 
     return (
-        <div className={styles.container}>Dashboard</div>
+        <div className={styles.container}>Dashboard
+        <h1>Dashboard</h1>
+            <div>
+                <Image src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/ae5428cb-8b0d-49e7-8490-b73e59f1dee7.jpg" width={500} height={400} />
+            </div>
+        </div>
+
         )
     
 };
